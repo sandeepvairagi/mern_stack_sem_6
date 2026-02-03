@@ -1,0 +1,21 @@
+# CLI Tool Structure
+
+cli-tool/                 -> main project folder  
+├── index.js              -> entry point of CLI tool  
+└── package.json          -> project configuration  
+
+index.js                  -> contains CLI logic  
+#!/usr/bin/env node       -> makes file executable  
+process.argv              -> read command line arguments  
+console.log()             -> show output in terminal  
+
+package.json              -> project metadata  
+"name"                    -> cli tool name  
+"version"                 -> tool version  
+"bin"                     -> command name mapping  
+"dependencies"            -> required packages  
+"scripts"                 -> run commands  
+
+npm init                  -> create package.json  
+npm link                  -> use cli tool globally  
+node index.js             -> run cli tool locally  
