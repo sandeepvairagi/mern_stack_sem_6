@@ -1,0 +1,58 @@
+# Node.js Basics
+
+node -v                 -> show node version  
+npm -v                  -> show npm version  
+
+node app.js             -> run node file  
+
+npm init                -> create package.json  
+npm init -y             -> create package.json default  
+
+npm install pkg         -> install package  
+npm uninstall pkg       -> remove package  
+npm install -g pkg      -> install globally  
+npm update pkg          -> update package  
+
+npm list                -> list installed packages  
+npm list -g             -> list global packages  
+
+const fs = require("fs")     -> import file system module  
+const path = require("path") -> import path module  
+const os = require("os")     -> import os module  
+
+fs.readFile("a.txt","utf8")  -> read file  
+fs.writeFile("a.txt","data") -> write file  
+fs.appendFile("a.txt","data") -> append file  
+fs.unlink("a.txt")           -> delete file  
+fs.mkdir("dir")              -> create folder  
+fs.rmdir("dir")              -> delete folder  
+
+path.basename("/a/b/c.txt")  -> get file name  
+path.extname("file.txt")     -> get file extension  
+
+os.platform()        -> show OS platform  
+os.arch()            -> show system architecture  
+os.freemem()         -> free memory  
+os.totalmem()        -> total memory  
+
+const http = require("http") -> import http module  
+
+http.createServer((req,res)=>{}) -> create server  
+res.write("Hello")          -> send response  
+res.end()                   -> end response  
+
+npm install express         -> install express  
+const express = require("express") -> import express  
+
+app.get("/",fn)             -> handle GET request  
+app.post("/",fn)            -> handle POST request  
+app.listen(3000)            -> start server  
+
+req.url                     -> request url  
+req.method                  -> request method  
+req.body                    -> request data  
+res.send("text")            -> send response  
+res.json(obj)               -> send json  
+
+process.exit()              -> exit process  
+process.env                 -> environment variables  
